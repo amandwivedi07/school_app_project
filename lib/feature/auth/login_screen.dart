@@ -120,7 +120,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               }
                             },
                             controller: mobNumController,
-                            style: const TextStyle(fontSize: 20),
+                            style: const TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.bold),
                             keyboardType: TextInputType.number,
                             decoration: const InputDecoration(
                               hintText: 'Type your phone Number',
