@@ -3,13 +3,9 @@ import 'package:flutter/material.dart';
 import 'global_variable.dart';
 
 class SearchContainer extends StatelessWidget {
-  double? height;
-  double? width;
   IconData? icon;
   String? containerText;
-  SearchContainer(
-      {this.height, this.width, this.icon, this.containerText, Key? key})
-      : super(key: key);
+  SearchContainer({this.icon, this.containerText, Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -45,8 +41,8 @@ class SearchContainer extends StatelessWidget {
           ),
         ],
       ),
-      height: height,
-      width: width,
+      height: MediaQuery.of(context).size.height * 0.2,
+      width: MediaQuery.of(context).size.height * 0.2,
       decoration: BoxDecoration(
         color: Colors.black,
         borderRadius: BorderRadius.circular(40),

@@ -31,17 +31,15 @@ class SearchScreen extends StatelessWidget {
         ),
         backgroundColor: Colors.transparent,
       ),
-      body: SingleChildScrollView(
-        child: SafeArea(
-            child: Padding(
-          padding: const EdgeInsets.only(left: 20),
-          child: Column(
+      body: Padding(
+        padding: const EdgeInsets.only(left: 6.0),
+        child: SingleChildScrollView(
+          child: SafeArea(
+              child: Column(
             children: [
               Row(
                 children: [
                   SearchContainer(
-                    height: MediaQuery.of(context).size.height * 0.2,
-                    width: MediaQuery.of(context).size.height * 0.21,
                     icon: CupertinoIcons.macwindow,
                     containerText: 'Attendance',
                   ),
@@ -49,8 +47,6 @@ class SearchScreen extends StatelessWidget {
                     width: 20,
                   ),
                   SearchContainer(
-                    height: MediaQuery.of(context).size.height * 0.2,
-                    width: MediaQuery.of(context).size.height * 0.21,
                     icon: CupertinoIcons.calendar,
                     containerText: 'Calendar',
                   ),
@@ -62,8 +58,6 @@ class SearchScreen extends StatelessWidget {
               Row(
                 children: [
                   SearchContainer(
-                    height: MediaQuery.of(context).size.height * 0.2,
-                    width: MediaQuery.of(context).size.height * 0.21,
                     icon: CupertinoIcons.money_dollar_circle,
                     containerText: 'Fees',
                   ),
@@ -71,8 +65,6 @@ class SearchScreen extends StatelessWidget {
                     width: 20,
                   ),
                   SearchContainer(
-                    height: MediaQuery.of(context).size.height * 0.2,
-                    width: MediaQuery.of(context).size.height * 0.21,
                     icon: CupertinoIcons.book_circle_fill,
                     containerText: 'HomeWork',
                   ),
@@ -84,8 +76,6 @@ class SearchScreen extends StatelessWidget {
               Row(
                 children: [
                   SearchContainer(
-                    height: MediaQuery.of(context).size.height * 0.2,
-                    width: MediaQuery.of(context).size.height * 0.21,
                     icon: CupertinoIcons.camera_on_rectangle,
                     containerText: 'Multimedia',
                   ),
@@ -93,8 +83,6 @@ class SearchScreen extends StatelessWidget {
                     width: 20,
                   ),
                   SearchContainer(
-                    height: MediaQuery.of(context).size.height * 0.2,
-                    width: MediaQuery.of(context).size.height * 0.21,
                     icon: CupertinoIcons.doc_append,
                     containerText: 'Notice Board',
                   ),
@@ -106,8 +94,6 @@ class SearchScreen extends StatelessWidget {
               Row(
                 children: [
                   SearchContainer(
-                    height: MediaQuery.of(context).size.height * 0.2,
-                    width: MediaQuery.of(context).size.height * 0.21,
                     icon: Icons.support,
                     containerText: 'Support',
                   ),
@@ -115,16 +101,14 @@ class SearchScreen extends StatelessWidget {
                     width: 20,
                   ),
                   SearchContainer(
-                    height: MediaQuery.of(context).size.height * 0.2,
-                    width: MediaQuery.of(context).size.height * 0.21,
                     icon: CupertinoIcons.person_crop_circle,
                     containerText: 'My Account',
                   ),
                 ],
               ),
             ],
-          ),
-        )),
+          )),
+        ),
       ),
     );
   }
